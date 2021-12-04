@@ -1,9 +1,32 @@
 <!DOCTYPE html>
-<head>
-  <title>Freezy<title>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'> 
-  <style>body {
+<!DOCTYPE html>
+<head><head>
+<div class="menu-container">
+  <div class="menu">
+    <ul><p>Menu<p>
+      <ul><li><p>Links</p>
+        <ul>
+            <ul>
+              <li><a href="chat">Chat</a></li>
+              <li><a href="brawlstars">Brawl Stars</a></li>
+              <li><a href="FNAF">FNAF</a></li>
+              <li><a href="lovehistory">Love History</a></li>
+              <li><a href="stres">WebStresser</a></li>
+              <li><a href="nakrutka.php">НАКРУТКА</a></li>
+            </ul>
+          </li>
+    </ul>
+  </div>
+      
+      <ul class="copy">
+<center><li>Freezy ©2021</li><center>
+</ul>
+  <style>
+    body {
   font-family: 'Source Sans Pro', sans-serif;
+            p { text-indent: 25px; }
+      H1 { text-align: center }
+H2 { text-align: center }
 }
 
 * {
@@ -218,59 +241,4 @@ a {
     }
   }
 }<style>
- 
-<script>$(document).ready(function() {
-
-  "use strict";
-
-  $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
-
-  $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
- 
-
-  $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">Navigation</a>");
-  $(".menu > ul > li").hover(function(e) {
-    if ($(window).width() > 943) {
-      $(this).children("ul").stop(true, false).fadeToggle(150);
-      e.preventDefault();
-    }
-  });
-  
-  $(".menu > ul > li").click(function() {
-    if ($(window).width() <= 943) {
-      $(this).children("ul").fadeToggle(150);
-    }
-  });
-
-
-  $(".menu-mobile").click(function(e) {
-    $(".menu > ul").toggleClass('show-on-mobile');
-    e.preventDefault();
-  });
-
-
-});<script> 
-  
-<body><div class="menu-container">
-  <div class="menu">
-    <ul>
-      <li></li>
-      <li>
-      <li><a href="#">Links</a>
-        <ul>
-          <li><a href="#">Links:</a>
-            <ul>
-              <li><a href="chat">Chat</a></li>
-              <li><a href="brawlstars">Brawl Stars</a></li>
-              <li><a href="FNAF">FNAF</a></li>
-              <li><a href="lovehistory">Love History</a></li>
-              <li><a href="stres">WebStresser</a></li>
-              <li><a href="nakrutka.php">НАКРУТКА</a></li>
-            </ul>
-          </li>
-    </ul>
-  </div>
-    <center><h2>.<h2><center>
-    <center><h2>Freezy Web Site<h2><center>
-    <center><p>.<p><center>
-    <center><li>Freezy, 2021<center><body>
+        <title>Freezy
